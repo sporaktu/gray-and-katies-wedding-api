@@ -52,3 +52,4 @@ typings/
 *.swp
 
 .idea
+.idea/workspace.xml
