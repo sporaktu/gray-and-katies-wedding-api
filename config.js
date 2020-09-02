@@ -19,15 +19,4 @@ const poolConfig = {
 console.log(poolConfig);
 const pool = new Pool(poolConfig);
 
-pool.query(`create table guests (id serial primary key, firstName varchar(30) not null, lastName varchar(30) not null);`, error => {
-    if (error) throw error;
-})
-
-pool.query(`insert into guests (firstName, lastName)
-            values ('Kevin', 'Lacey');
-`, error => {
-    if (error) throw error;
-})
-
-
 module.exports = {pool};
