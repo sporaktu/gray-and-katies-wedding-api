@@ -50,3 +50,5 @@ typings/
 
 # Vim swap files
 *.swp
+
+.idea
