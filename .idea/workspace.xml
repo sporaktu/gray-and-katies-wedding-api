@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +50,17 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -87,7 +99,7 @@
       <workItem from="1598840722906" duration="617000" />
       <workItem from="1599011717913" duration="982000" />
       <workItem from="1599013455217" duration="8400000" />
-      <workItem from="1599026004091" duration="1534000" />
+      <workItem from="1599026004091" duration="1975000" />
     </task>
     <servers />
   </component>
@@ -95,6 +107,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1043" y="787" key="#SQL_Dialects" timestamp="1599072785843">
+      <screen x="0" y="23" width="3360" height="1867" />
+    </state>
+    <state x="1043" y="787" key="#SQL_Dialects/3360.1206.1920.1057/-1680.163.1680.1027/0.23.3360.1867@0.23.3360.1867" timestamp="1599072785843" />
     <state x="1054" y="495" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599014833335">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
