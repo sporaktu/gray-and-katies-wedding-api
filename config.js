@@ -11,7 +11,9 @@ const poolConfig = {
       isProduction ?
         process.env.DATABASE_URL :
         connectionString,
-    ssl: isProduction
+    ssl: {
+      rejectUnauthorized: false
+    }
 }
 
 console.log(poolConfig);
