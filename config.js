@@ -11,7 +11,7 @@ const pool = new Pool({
         isProduction ?
             process.env.DATABASE_URL :
             connectionString,
-    ssl: false
+    ssl: isProduction
 });
 
 module.exports = {pool};
