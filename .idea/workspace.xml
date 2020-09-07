@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SQL/rollbackGuestTable.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/guests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/helpers/routeLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/db.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SQL/createGuestsTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/createGuestsTable.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/helpers/sqlLoader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/db.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/guests.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/guests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/helpers/routeLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/helpers/routeLoader.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +23,7 @@
       <list>
         <option value="SQL" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,6 +46,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -64,11 +61,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Programming\gray-and-katies-wedding-api\SQL\helpers" />
+      <recent name="G:\Programming\gray-and-katies-wedding-api\SQL\sqlLoader" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Programming\gray-and-katies-wedding-api" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.postinstall">
+  <component name="RunManager" selected="npm.dev">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -113,8 +114,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.postinstall" />
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
   </component>
@@ -157,22 +158,22 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="810" y="360" key="DBNavigator.ProjectSettingsDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599507220366" />
-    <state width="1269" height="397" key="GridCell.Tab.0.bottom" timestamp="1599512946718">
+    <state width="1269" height="397" key="GridCell.Tab.0.bottom" timestamp="1599519752329">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599512946718" />
-    <state width="1269" height="397" key="GridCell.Tab.0.center" timestamp="1599512946718">
+    <state width="1269" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599519752329" />
+    <state width="1269" height="397" key="GridCell.Tab.0.center" timestamp="1599519752329">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="397" key="GridCell.Tab.0.center/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599512946718" />
-    <state width="1269" height="397" key="GridCell.Tab.0.left" timestamp="1599512946718">
+    <state width="1269" height="397" key="GridCell.Tab.0.center/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599519752329" />
+    <state width="1269" height="397" key="GridCell.Tab.0.left" timestamp="1599519752329">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="397" key="GridCell.Tab.0.left/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599512946718" />
-    <state width="1269" height="397" key="GridCell.Tab.0.right" timestamp="1599512946718">
+    <state width="1269" height="397" key="GridCell.Tab.0.left/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599519752329" />
+    <state width="1269" height="397" key="GridCell.Tab.0.right" timestamp="1599519752329">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="1269" height="397" key="GridCell.Tab.0.right/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599512946718" />
+    <state width="1269" height="397" key="GridCell.Tab.0.right/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599519752329" />
     <state width="632" height="184" key="LargeValuePreview.QUERY" timestamp="1599013566015">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -185,9 +186,13 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599513146578" />
-    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599515550831">
+    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599517086467">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599515550831" />
+    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599517086467" />
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1599515795667">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599515795667" />
   </component>
 </project>
