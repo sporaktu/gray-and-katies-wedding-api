@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 const DIRECTORY = './sql/';
-const SQL_SCRIPTS = [];
+const SQL_SCRIPTS = {};
 
 function getAllSqlFiles() {
     fs.readdir(DIRECTORY, (err, fileNames) => {
@@ -20,7 +20,7 @@ function readFile(fileName) {
             console.error(err);
             return;
         }
-        SQL_SCRIPTS.push({name: fileName, content: content});
+        SQL_SCRIPTS[fileName.replace('.sql', '')] = content;
     })
 }
 
