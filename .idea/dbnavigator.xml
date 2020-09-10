@@ -22,40 +22,30 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes>
-      <connection connection-id="524e1604-f0a2-4711-a774-da961359649b">
-        <schema name="information_schema" object-types="table, view, sequence, function" />
-        <schema name="pg_catalog" object-types="table, view, sequence, dataset trigger, constraint, index, function, column" />
-        <schema name="pg_temp_1" object-types="table, view, sequence, function" />
-        <schema name="pg_toast" object-types="table, view, sequence, function" />
-        <schema name="pg_toast_temp_1" object-types="table, view, sequence, function" />
-        <schema name="public" object-types="table, view, sequence, function" />
+      <connection connection-id="2f34dc75-1780-46e9-bb70-50972a8bc5a9">
+        <schema name="public" object-types="table, view, index, function, sequence" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="524e1604-f0a2-4711-a774-da961359649b">
-      <console name="Connection" type="STANDARD" schema="public" session="Main"><![CDATA[create table guests (
-    firstName varchar(30),
-    lastName varchar (30)
-)
-
-insert into guests values ('kevin', 'lacey')
-
-select * from guests;]]></console>
+    <connection id="2f34dc75-1780-46e9-bb70-50972a8bc5a9">
+      <console name="heroku-wedding-api" type="STANDARD" schema="information_schema" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="524e1604-f0a2-4711-a774-da961359649b" />
+    <connection id="2f34dc75-1780-46e9-bb70-50972a8bc5a9">
+      <session name="Session 1" id="d32f3c85-3b65-4f51-b443-9bb9a0cc6069" />
+    </connection>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="524e1604-f0a2-4711-a774-da961359649b" dataset="pg_catalog.pg_amproc" active-filter-id="5ee65c54-528b-4a65-93da-1bf3c08b982c">
-      <filter id="5ee65c54-528b-4a65-93da-1bf3c08b982c" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="amprocfamily" operator="=" value="" active="true" />
+    <filter-actions connection-id="2f34dc75-1780-46e9-bb70-50972a8bc5a9" dataset="public.guests" active-filter-id="">
+      <filter id="49305c39-abb1-49ae-8aa1-53de60c198c4" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="firstname" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
   </component>
@@ -64,6 +54,8 @@ select * from guests;]]></console>
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/init.sql" connection-id="524e1604-f0a2-4711-a774-da961359649b" session-id="MAIN" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/SQL/rollbackGuestsTable.sql" connection-id="2f34dc75-1780-46e9-bb70-50972a8bc5a9" session-id="d32f3c85-3b65-4f51-b443-9bb9a0cc6069" current-schema="public" />
+    <mapping file-url="file://$PROJECT_DIR$/SQL/createGuestsTable.sql" connection-id="2f34dc75-1780-46e9-bb70-50972a8bc5a9" session-id="MAIN" current-schema="public" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -82,14 +74,14 @@ select * from guests;]]></console>
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces>
-      <mapping database-type="POSTGRES" interface-id="DEFAULT" />
+      <mapping database-type="POSTGRES" interface-id="2e674358-2f7a-4385-869c-519537ebf1e0" />
     </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="524e1604-f0a2-4711-a774-da961359649b" active="true">
+      <connection id="2f34dc75-1780-46e9-bb70-50972a8bc5a9" active="true">
         <database>
-          <name value="Connection" />
+          <name value="heroku-wedding-api" />
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -100,7 +92,7 @@ select * from guests;]]></console>
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="5432" />
-          <database value="postgres" />
+          <database value="heroku-wedding-api" />
           <type value="USER_PASSWORD" />
           <user value="api_user" />
           <deprecated-pwd value="cGFzc3dvcmQ=" />
@@ -491,7 +483,9 @@ select * from guests;]]></console>
         <prompt-execution value="false" />
       </statement-execution>
       <script-execution>
-        <command-line-interfaces />
+        <command-line-interfaces>
+          <value id="2e674358-2f7a-4385-869c-519537ebf1e0" name="PostgreSQL terminal" executable-path="C:/Program Files/PostgreSQL/12/bin/psql.exe" database-type="POSTGRES" />
+        </command-line-interfaces>
         <execution-timeout value="300" />
       </script-execution>
       <method-execution>
