@@ -14,7 +14,7 @@ const guestsRouter = require('./routes/guests');
 const app = express();
 
 const corsOptions = {
-    origin: process.env.BASEURL,
+    origin: process.env.BASE_URL || 'http://localhost:3000',
     optionsSuccessStatus: 200
 }
 
