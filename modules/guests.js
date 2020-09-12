@@ -1,7 +1,7 @@
 const fs = require('fs');
 const SQL_DIRECTORY = './sql/';
 const CREATE_GUEST_SQL_FILE_NAME = 'createGuest.sql';
-
+let poolError = null;
 const {pool} = require('../config');
 
 function getAllGuests(req, res) {
@@ -11,6 +11,11 @@ function getAllGuests(req, res) {
         }
         res.status(200).json(results.rows);
     })
+}
+
+module.exports = {
+    getAllGuests,
+    createGuest
 }
 
 function createGuest(req, res) {
@@ -42,12 +47,9 @@ function createGuest(req, res) {
             if (error) {
                 throw error;
             }
-            res.status(201).json({status: 'success', message: 'Guest Added'});
+            poolError = error;
         }
-    )
-}
-
-module.exports = {
-    getAllGuests,
-    createGuest
+)
+    let message = poolError ? poolError.toString() : 'success';
+    res.end(message);
 }
