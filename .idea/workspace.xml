@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/guests.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/guests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/createGuest.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/createGuest.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL/createGuestsTable.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SQL/createGuestsTable.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +150,8 @@
       <workItem from="1599700161238" duration="189000" />
       <workItem from="1599700387793" duration="11099000" />
       <workItem from="1599753970606" duration="669000" />
-      <workItem from="1599867744155" duration="2126000" />
+      <workItem from="1599867744155" duration="3410000" />
+      <workItem from="1599930977255" duration="2140000" />
     </task>
     <servers />
   </component>
@@ -174,10 +176,10 @@
     </state>
     <state x="795" y="577" key="#SQL_Dialects/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599702436625" />
     <state x="1043" y="787" key="#SQL_Dialects/3360.1206.1920.1057/-1680.163.1680.1027/0.23.3360.1867@0.23.3360.1867" timestamp="1599072785843" />
-    <state x="872" y="363" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599700345393">
+    <state x="872" y="363" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599931509857">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="363" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599700345393" />
+    <state x="872" y="363" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599931509857" />
     <state x="1054" y="495" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599014833335">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -206,22 +208,22 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599698646075" />
-    <state width="2517" height="397" key="GridCell.Tab.0.bottom" timestamp="1599869266869">
+    <state width="1741" height="397" key="GridCell.Tab.0.bottom" timestamp="1599947269539">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599869266869" />
-    <state width="2517" height="397" key="GridCell.Tab.0.center" timestamp="1599869266869">
+    <state width="1741" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599947269539" />
+    <state width="1741" height="397" key="GridCell.Tab.0.center" timestamp="1599947269539">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="397" key="GridCell.Tab.0.center/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599869266869" />
-    <state width="2517" height="397" key="GridCell.Tab.0.left" timestamp="1599869266868">
+    <state width="1741" height="397" key="GridCell.Tab.0.center/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599947269539" />
+    <state width="1741" height="397" key="GridCell.Tab.0.left" timestamp="1599947269539">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="397" key="GridCell.Tab.0.left/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599869266868" />
-    <state width="2517" height="397" key="GridCell.Tab.0.right" timestamp="1599869266869">
+    <state width="1741" height="397" key="GridCell.Tab.0.left/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599947269539" />
+    <state width="1741" height="397" key="GridCell.Tab.0.right" timestamp="1599947269539">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state width="2517" height="397" key="GridCell.Tab.0.right/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599869266869" />
+    <state width="1741" height="397" key="GridCell.Tab.0.right/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599947269539" />
     <state width="632" height="184" key="LargeValuePreview.QUERY" timestamp="1599013566015">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -230,6 +232,14 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="781" y="350" key="SettingsEditor/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599706081311" />
+    <state x="1120" y="587" width="319" height="263" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1599931029702">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1120" y="587" width="319" height="263" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599931029702" />
+    <state x="1107" y="384" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1599944872029">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1107" y="384" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599944872029" />
     <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599718132122">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>

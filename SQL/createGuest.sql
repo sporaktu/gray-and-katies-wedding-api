@@ -13,49 +13,25 @@ DECLARE
     plusone_id integer;
 BEGIN
     if plusonevalue = true then
-        insert into guests (lastname, firstname, attending, plusone, isplusone)
-        values (plusonelastnamevalue, plusonefirstnamevalue, true, false, true)
+        insert into guests (lastname, firstname, attending, plusone, isplusone, date_created, date_modified)
+        values (plusonelastnamevalue, plusonefirstnamevalue, true, false, true, current_timestamp, current_timestamp)
         returning id into plusone_id;
 
         insert into guests (lastname, firstname, attending, plusone, isplusone, plusoneid, email, phone,
-                            songrequest)
+                            songrequest, date_created, date_modified)
         values (lastnamevalue, firstnamevalue, attendingvalue, plusonevalue, false, plusone_id, emailvalue, phonevalue,
-                songrequestvalue);
+                songrequestvalue, current_timestamp, current_timestamp);
 
         return plusone_id;
     end if;
     if plusonevalue = false then
         insert into guests (lastname, firstname, attending, plusone, isplusone, plusoneid, email, phone,
-                            songrequest)
+                            songrequest, date_created, date_modified)
         values (lastnamevalue, firstnamevalue, attendingvalue, plusonevalue, false, null, emailvalue, phonevalue,
-                songrequestvalue);
+                songrequestvalue, current_timestamp, current_timestamp);
 
         return null;
     end if;
     END;
 $BODY$
     LANGUAGE plpgsql volatile;
-
-select new_guest(
-    $1,
-    $2,
-    $3,
-    $4,
-    $5,
-    $6,
-    $7,
-    $8,
-    $9
-    );
-
-select new_guest(
-               'Kevin',
-               'Lacey',
-               true,
-               true,
-               'bobby',
-               'mitchel',
-               'kevin@mail.com',
-               '123-456-7890',
-               'sweet child of mine'
-           );
