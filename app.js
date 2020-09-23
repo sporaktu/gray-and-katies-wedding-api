@@ -1,11 +1,11 @@
 const express = require('express');
 const path = require('path');
+require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const logger = require('morgan');
 const cors = require('cors');
-const {pool} = require('./config');
-
+const jwtCheck = require('./middleware/checkJwt');
 // const routeLoader = require('./routes/helpers/routeLoader');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -14,7 +14,7 @@ const guestsRouter = require('./routes/guests');
 const app = express();
 
 const corsOptions = {
-    origin: process.env.BASE_URL || 'http://localhost:3000',
+    origin: process.env.CORS_URL || 'http://localhost:3000',
     optionsSuccessStatus: 200
 }
 
@@ -26,6 +26,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+// app.use(jwtCheck);
+
+app.get('/authorized', (req, res) => {
+    res.send('Secured Resource');
+})
 
 // routeLoader(app);
 app.use('/', indexRouter);

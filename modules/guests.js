@@ -4,8 +4,9 @@ const CREATE_GUEST_SQL_FILE_NAME = 'createGuest.sql';
 let poolError = null;
 const {pool} = require('../config');
 
-function getAllGuests(req, res) {
-    pool.query('select * from guests', (error, results) => {
+async function getAllGuests(req, res) {
+    console.log(req)
+    await pool.query('select * from guests', (error, results) => {
         if (error) {
             throw error;
         }
@@ -13,12 +14,7 @@ function getAllGuests(req, res) {
     })
 }
 
-module.exports = {
-    getAllGuests,
-    createGuest
-}
-
-function createGuest(req, res) {
+async function createGuest(req, res) {
     const {
         firstName,
         lastName,
@@ -31,7 +27,7 @@ function createGuest(req, res) {
         plusOneLastName
     } = req.body;
 
-    pool.query('select new_guest($1,$2,$3,$4,$5,$6,$7,$8,$9);',
+   await pool.query('select new_guest($1,$2,$3,$4,$5,$6,$7,$8,$9);',
         [
             lastName,
             firstName,
@@ -52,4 +48,10 @@ function createGuest(req, res) {
 )
     let message = poolError ? poolError.toString() : 'success';
     res.end(message);
+}
+
+
+module.exports = {
+    getAllGuests,
+    createGuest
 }
