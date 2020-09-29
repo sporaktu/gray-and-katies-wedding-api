@@ -17,10 +17,10 @@
     "jwks-rsa": "^1.9.0",
     "morgan": "~1.9.1",
     "pg": "^8.3.3",
-    "whiskers": "^0.4.0"
+    "whiskers": "^0.4.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "nodemon": "^2.0.4"
   }
 }

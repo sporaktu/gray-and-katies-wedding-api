@@ -14,10 +14,10 @@ const guestsRouter = require('./routes/guests');
 const app = express();
 
 const corsOptions = {
-    origin: process.env.CORS_URL || 'http://localhost:3000',
+    origin: process.env.CORS_URL,
     optionsSuccessStatus: 200
 }
-
+console.log(corsOptions)
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
