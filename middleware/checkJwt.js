@@ -7,14 +7,12 @@ const jwksExpressJwtSecretOptions = {
     jwksRequestsPerMinute: 5,
     jwksUri: `${process.env.AUTH_URL}.well-known/jwks.json` || 'https://grayandkatie.us.auth0.com/.well-known/jwks.json'
 };
-console.log(jwksExpressJwtSecretOptions);
 const jwtOptions = {
     secret: jwks.expressJwtSecret(jwksExpressJwtSecretOptions),
     audience: process.env.BASE_URL || 'http://localhost:3002',
     issuer: process.env.AUTH_URL || 'https://grayandkatie.us.auth0.com/',
     algorithms: ['RS256']
 };
-console.log(jwtOptions);
 const jwtCheck = jwt(jwtOptions);
 
 module.exports = jwtCheck;

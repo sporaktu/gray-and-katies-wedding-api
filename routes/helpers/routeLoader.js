@@ -8,10 +8,8 @@ function routeLoader(app) {
             console.error(err);
             return;
         }
-        console.log(fileNames)
         fileNames.forEach(fileName => {
             const route = DIRECTORY + fileName;
-            console.log(route);
             require(route)(app);
         })
     })

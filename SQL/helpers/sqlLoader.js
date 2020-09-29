@@ -14,7 +14,6 @@ function getAllSqlFiles() {
 }
 
 function readFile(fileName) {
-    console.log(fileName, DIRECTORY)
     fs.readFile(DIRECTORY + fileName, 'utf-8', (err, content) => {
         if (err) {
             console.error(err);
