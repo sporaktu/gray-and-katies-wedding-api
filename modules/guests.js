@@ -27,7 +27,7 @@ async function createGuest(req, res) {
         plusOneLastName
     } = req.body;
 
-   await pool.query('select new_guest($1,$2,$3,$4,$5,$6,$7,$8,$9);',
+   await pool.query(`select new_guest($1,$2,$3,$4,$5,$6,$7,$8,$9);`,
         [
             lastName,
             firstName,

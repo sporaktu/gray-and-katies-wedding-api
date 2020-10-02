@@ -10,6 +10,7 @@ const jwtCheck = require('./middleware/checkJwt');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const guestsRouter = require('./routes/guests');
+const weddingPartyRouter = require('./routes/wedding-party');
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.get('/authorized', (req, res) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/guests', guestsRouter);
+app.use('/wedding-party', weddingPartyRouter);
 
 
 module.exports = app;
