@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SQL/createWeddingPartyTable.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/wedding-party.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/guests.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/guests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wedding-party.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,17 +83,6 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="createGuest.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/SQL/createGuest.sql" />
       <script-mode>FILE</script-mode>
@@ -170,7 +156,8 @@
       <workItem from="1600118084355" duration="1397000" />
       <workItem from="1600626564335" duration="5897000" />
       <workItem from="1600808625588" duration="5281000" />
-      <workItem from="1601336612909" duration="15165000" />
+      <workItem from="1601336612909" duration="15477000" />
+      <workItem from="1601672470485" duration="1841000" />
     </task>
     <servers />
   </component>

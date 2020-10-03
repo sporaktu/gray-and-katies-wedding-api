@@ -10,7 +10,7 @@ async function getAllWeddingParty(req, res) {
 
 async function getWeddingPartyMember(req, res) {
     const {id} = req.params;
-    await pool.query(`select * from wedding_party where id = (${id})`, (error, results) => {
+    await pool.query(`select * from wedding_party where id = ${id} and archived = false`, (error, results) => {
         if (error) throw error;
         res.status(200).json(results.rows);
     })
@@ -54,7 +54,6 @@ async function editWeddingPartyMember(req, res) {
             role = '${role}',
             story = '${parsedStory}'
         where id = ${id};`
-    console.log(query)
     await pool.query(query, [],
         error => {
             if (error) throw error;
@@ -63,12 +62,27 @@ async function editWeddingPartyMember(req, res) {
 
     let message = poolError ? poolError.toString() : 'success';
     res.end(message);
-}
-;
+};
+
+async function handleDeletePartyMember(req, res) {
+    const {id} = req.params;
+    const query = `update wedding_party
+        set archived = true
+        where id = ${id}`;
+
+    await pool.query(query, [], error => {
+        if (error) throw error;
+        poolError = error;
+    })
+
+    let message = poolError ? poolError.toString() : 'success';
+    res.end(message);
+};
 
 
 module.exports = {
     getAllWeddingParty,
     handleWeddingPartyMemberPost,
-    getWeddingPartyMember
+    getWeddingPartyMember,
+    handleDeletePartyMember
 }
