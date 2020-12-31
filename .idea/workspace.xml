@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/modules/helpers/imageFilter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/image-uploads.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wedding-party.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +66,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="12.9.1" />
-    <property name="javascript.nodejs.core.library.typings.version" value="12.12.56" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.11.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.11.0" />
     <property name="last_opened_file_path" value="$USER_HOME$/latest.dump" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -128,8 +131,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.dev" />
-        <item itemvalue="Database Script.createGuest.sql" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.postinstall" />
         <item itemvalue="Database Script.createGuestsTable.sql" />
+        <item itemvalue="Database Script.createGuest.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +163,9 @@
       <workItem from="1600808625588" duration="5281000" />
       <workItem from="1601336612909" duration="15477000" />
       <workItem from="1601672470485" duration="1841000" />
+      <workItem from="1607208753607" duration="46000" />
+      <workItem from="1607208817771" duration="1428000" />
+      <workItem from="1609362360002" duration="3115000" />
     </task>
     <servers />
   </component>
@@ -178,104 +186,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="795" y="577" key="#SQL_Dialects" timestamp="1599702436625">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="795" y="577" key="#SQL_Dialects/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599702436625" />
-    <state x="1043" y="787" key="#SQL_Dialects/3360.1206.1920.1057/-1680.163.1680.1027/0.23.3360.1867@0.23.3360.1867" timestamp="1599072785843" />
-    <state x="872" y="363" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599931509857">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="872" y="363" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599931509857" />
-    <state x="1054" y="495" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601351959609">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1054" y="495" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601351959609" />
-    <state x="921" y="310" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1599013727068">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="921" y="310" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599013727068" />
-    <state x="1010" y="452" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599700537705">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1010" y="452" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599700537705" />
-    <state x="1010" y="630" key="DBNavigator.CreateRenameSessionDialog" timestamp="1599699614648">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1010" y="630" key="DBNavigator.CreateRenameSessionDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599699614648" />
-    <state x="860" y="420" key="DBNavigator.DatasetFilterDialog" timestamp="1599699519003">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="860" y="420" key="DBNavigator.DatasetFilterDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599699519003" />
-    <state x="810" y="360" key="DBNavigator.ProjectSettingsDialog" timestamp="1599699642401">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="810" y="360" key="DBNavigator.ProjectSettingsDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599699642401" />
-    <state x="1060" y="454" key="FileChooserDialogImpl" timestamp="1601336998871">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1060" y="454" key="FileChooserDialogImpl/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601336998871" />
-    <state width="1741" height="397" key="GridCell.Tab.0.bottom" timestamp="1601604792325">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state width="1741" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601604792325" />
-    <state width="1741" height="397" key="GridCell.Tab.0.center" timestamp="1601604792325">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state width="1741" height="397" key="GridCell.Tab.0.center/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601604792325" />
-    <state width="1741" height="397" key="GridCell.Tab.0.left" timestamp="1601604792325">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state width="1741" height="397" key="GridCell.Tab.0.left/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601604792325" />
-    <state width="1741" height="397" key="GridCell.Tab.0.right" timestamp="1601604792325">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state width="1741" height="397" key="GridCell.Tab.0.right/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601604792325" />
-    <state width="632" height="184" key="LargeValuePreview.QUERY" timestamp="1599013566015">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state width="632" height="184" key="LargeValuePreview.QUERY/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599013566015" />
-    <state x="781" y="350" key="SettingsEditor" timestamp="1599706081311">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="781" y="350" key="SettingsEditor/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599706081311" />
-    <state x="1120" y="587" width="319" height="263" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1599931029702">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1120" y="587" width="319" height="263" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599931029702" />
-    <state x="860" y="360" key="com.intellij.database.dbimport.ImportDialog" timestamp="1601337103344">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="860" y="360" key="com.intellij.database.dbimport.ImportDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601337103344" />
-    <state x="1107" y="384" width="286" height="718" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1601351929117">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1107" y="384" width="286" height="718" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601351929117" />
-    <state x="799" y="410" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1601604579010">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="799" y="410" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601604579010" />
-    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1599718132122">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599718132122" />
-    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599517086467">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="92" y="92" width="2376" height="1226" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599517086467" />
-    <state x="1097" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599869283406">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="1097" y="615" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1599869283406" />
-    <state x="988" y="280" width="583" height="849" key="find.popup" timestamp="1601337382645">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="988" y="280" width="583" height="849" key="find.popup/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1601337382645" />
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1600656355501">
-      <screen x="0" y="0" width="2560" height="1410" />
-    </state>
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410/-1920.222.1920.1050/2560.126.1920.1050@0.0.2560.1410" timestamp="1600656355501" />
   </component>
 </project>
