@@ -19,13 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/modules/helpers/imageFilter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/image-uploads.js" afterDir="false" />
+    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding image link capabilities">
+      <change afterPath="$PROJECT_DIR$/SQL/createRegistryTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/helpers/endRequestWithLog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/helpers/handleError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/registry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/wedding-party.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +65,7 @@
     <property name="DBE.Init.BalloonShown" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunConfigurationTargetLRU" value="85380d4f-b0b1-4083-b716-98a6e41610cd" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -86,16 +89,27 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration name="createGuest.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="$PROJECT_DIR$/SQL/createGuest.sql" />
-      <script-mode>FILE</script-mode>
-      <data-source id="85380d4f-b0b1-4083-b716-98a6e41610cd" namespace="database/&quot;heroku-wedding-api&quot;/schema/&quot;public&quot;" />
-      <method v="2" />
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="createGuestsTable.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/SQL/createGuestsTable.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="85380d4f-b0b1-4083-b716-98a6e41610cd" namespace="database/&quot;heroku-wedding-api&quot;/schema/&quot;public&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="createRegistryTable.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/SQL/createRegistryTable.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="85380d4f-b0b1-4083-b716-98a6e41610cd" />
       <method v="2" />
     </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -130,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Database Script.createRegistryTable.sql" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.postinstall" />
         <item itemvalue="Database Script.createGuestsTable.sql" />
-        <item itemvalue="Database Script.createGuest.sql" />
       </list>
     </recent_temporary>
   </component>
@@ -165,8 +179,17 @@
       <workItem from="1601672470485" duration="1841000" />
       <workItem from="1607208753607" duration="46000" />
       <workItem from="1607208817771" duration="1428000" />
-      <workItem from="1609362360002" duration="3115000" />
+      <workItem from="1609362360002" duration="4363000" />
+      <workItem from="1612405040584" duration="4433000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding image link capabilities">
+      <created>1609385221057</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609385221057</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,5 +209,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding image link capabilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding image link capabilities" />
   </component>
 </project>

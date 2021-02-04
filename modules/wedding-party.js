@@ -1,14 +1,7 @@
 let poolError = null;
 const {pool} = require('../config');
 const {handleImageUpload} = require('./image-uploads');
-
-const handleError = (err, res) => {
-    res
-        .status(500)
-        .contentType("text/plain")
-        .end("Oops! Something went wrong!");
-    throw err;
-};
+const handleError = require('./helpers/handleError');
 
 async function getAllWeddingParty(req, res) {
     await pool.query('select * from wedding_party where archived = false', (error, results) => {
