@@ -20,19 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding image link capabilities">
-      <change afterPath="$PROJECT_DIR$/SQL/createRegistryTable.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/helpers/endRequestWithLog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/helpers/handleError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/registry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/helpers/registryLinkParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/www" beforeDir="false" afterPath="$PROJECT_DIR$/bin/www" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/registry.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="3bac580c-6db5-42a3-af7d-402435424dd4" value="Forest" />
+    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,6 +48,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -67,11 +78,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunConfigurationTargetLRU" value="85380d4f-b0b1-4083-b716-98a6e41610cd" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.11.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.11.0" />
-    <property name="last_opened_file_path" value="$USER_HOME$/latest.dump" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.8.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.26" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -80,26 +98,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\Programming\gray-and-katies-wedding-api\SQL\helpers" />
-      <recent name="G:\Programming\gray-and-katies-wedding-api\SQL\sqlLoader" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Programming\gray-and-katies-wedding-api" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Programming\gray-and-katies-wedding-api" />
+      <recent name="G:\Programming\gray-and-katies-wedding-api\SQL\helpers" />
+      <recent name="G:\Programming\gray-and-katies-wedding-api\SQL\sqlLoader" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.dev">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="createGuestsTable.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/SQL/createGuestsTable.sql" />
       <script-mode>FILE</script-mode>
@@ -144,8 +152,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.createRegistryTable.sql" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="Database Script.createRegistryTable.sql" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.postinstall" />
         <item itemvalue="Database Script.createGuestsTable.sql" />
@@ -181,6 +189,11 @@
       <workItem from="1607208817771" duration="1428000" />
       <workItem from="1609362360002" duration="4363000" />
       <workItem from="1612405040584" duration="4433000" />
+      <workItem from="1613106687468" duration="96000" />
+      <workItem from="1613106792773" duration="600000" />
+      <workItem from="1613664666802" duration="7965000" />
+      <workItem from="1615052361637" duration="38000" />
+      <workItem from="1615052412198" duration="16141000" />
     </task>
     <task id="LOCAL-00001" summary="Adding image link capabilities">
       <created>1609385221057</created>

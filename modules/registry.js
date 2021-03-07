@@ -1,6 +1,7 @@
 let poolError = null;
 const {pool} = require('../config');
 const handleError = require('./helpers/handleError')
+const Parser = require('./helpers/registryLinkParser')
 
 async function getAllRegistry(req, res) {
     await pool.query('select * from registry where archived = false', (error, results) => {
@@ -24,8 +25,13 @@ async function handleRegistryItemPost(req, res) {
 }
 
 async function createRegistryItem(req, res) {
-    const {name, url, store, picture_url, price} = req.body;
-
+    let {name, url, store, picture_url, price} = req.body;
+    const ProductPage = new Parser(url);
+    name === '' ? ProductPage.name : name;
+    store === '' ? ProductPage.store : store;
+    picture_url === '' ? ProductPage.picture : picture_url;
+    price === '' ? ProductPage.price : price;
+    console.log({name, store, picture_url, price});
     await pool.query(
         `insert into registry (
                       name,
@@ -55,7 +61,36 @@ async function createRegistryItem(req, res) {
 }
 
 async function editRegistryItem(req, res) {
-    const {name, url, store, picture_url, price, purchased, archived, id} = req.body;
+    let {name, url, store, picture_url, price, purchased, archived, id} = req.body;
+    const ProductPage = new Parser(url);
+    name === '' ? await ProductPage.name : name;
+    store === '' ? await ProductPage.store : store;
+    picture_url === '' ? await ProductPage.picture : picture_url;
+    price === '' ? await ProductPage.price : price;
+    console.log({name, store, picture_url, price});
+    const query = `update registry
+        set name = '${name}',
+            url = '${url}',
+            store = '${store}',
+            picture_url = '${picture_url}',
+            price = '${price}',
+            purchased = '${purchased}',
+            archived = '${archived}', 
+            date_modified = current_timestamp
+        where id = '${id};'
+    `
+    await pool.query(query, [], error => {
+        if (error) handleError(error, res);
+        poolError = error;
+    })
+
+    let message = poolError ? poolError.toString() : 'success';
+    res.end(message);
+}
+
+async function queryEditRegistryItem(body) {
+    const {name, url, store, picture_url, price, purchased, archived, id} = body;
+    const result = {};
     const query = `update registry
         set name = '${name}',
             url = '${url}',
@@ -68,12 +103,9 @@ async function editRegistryItem(req, res) {
         where id = '${id};'
     `
     await pool.query(query, [], error => {
-        if (error) handleError(error, res);
-        poolError = error;
+        if (error) result.error = error;
     })
-
-    let message = poolError ? poolError.toString() : 'success';
-    res.end(message);
+    return result;
 }
 
 async function handleDeleteRegistryItem(req, res) {
