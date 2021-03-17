@@ -19,15 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding image link capabilities">
-      <change afterPath="$PROJECT_DIR$/SQL/createRegistryTable.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/helpers/endRequestWithLog.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/helpers/handleError.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/registry.js" afterDir="false" />
+    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding scraping stuff">
+      <change afterPath="$PROJECT_DIR$/SQL/createStoryTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/helpers/parsePoolMessage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/story.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/story.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="scraper" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -69,9 +72,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.11.0" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.11.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.10.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.35" />
     <property name="last_opened_file_path" value="$USER_HOME$/latest.dump" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -144,8 +153,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Database Script.createRegistryTable.sql" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="Database Script.createRegistryTable.sql" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.postinstall" />
         <item itemvalue="Database Script.createGuestsTable.sql" />
@@ -181,6 +190,7 @@
       <workItem from="1607208817771" duration="1428000" />
       <workItem from="1609362360002" duration="4363000" />
       <workItem from="1612405040584" duration="4433000" />
+      <workItem from="1615948459130" duration="5149000" />
     </task>
     <task id="LOCAL-00001" summary="Adding image link capabilities">
       <created>1609385221057</created>
@@ -212,6 +222,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding image link capabilities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding image link capabilities" />
+    <MESSAGE value="Adding scraping stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding scraping stuff" />
   </component>
 </project>

@@ -12,6 +12,7 @@ const usersRouter = require('./routes/users');
 const guestsRouter = require('./routes/guests');
 const weddingPartyRouter = require('./routes/wedding-party');
 const registryRouter = require('./routes/registry');
+const storyRouter = require('./routes/story');
 
 const app = express();
 
@@ -39,6 +40,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/guests', guestsRouter);
 app.use('/registry', registryRouter);
+app.use('/story', storyRouter);
 app.use('/wedding-party', weddingPartyRouter);
 
 
