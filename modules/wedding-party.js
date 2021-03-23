@@ -41,6 +41,7 @@ async function createWeddingPartyMember(req, res) {
 
         ],
         error => {
+            // This is not how you handle the error. @TODO fix this
             if (error) handleError(error, res);
             poolError = error;
         })

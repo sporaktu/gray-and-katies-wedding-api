@@ -1,9 +1,9 @@
 const {pool} = require('../config');
 const handleError = require('./helpers/handleError');
 const parsePoolMessage = require('./helpers/parsePoolMessage')
-let poolError = null;
 
 async function getAllStoryParts(req, res) {
+    let poolError = null;
     await pool.query('select * from story where archived = false ORDER BY "order"', (error, results) => {
         if (error) handleError(error, res);
         res.status(200).json(results.rows);
@@ -11,9 +11,12 @@ async function getAllStoryParts(req, res) {
 }
 
 async function getStoryPart(req, res) {
+    console.log('getStoryPart')
+    let poolError = null;
     const {id} = req.params;
     await pool.query(`select * from story where id = '${id}' and archived = false`, (error, results) => {
         if (error) handleError(error, res);
+        console.log(results.rows)
         res.status(200).json(results.rows);
     })
 }
@@ -25,6 +28,7 @@ async function handleStoryPost(req, res) {
 }
 
 async function createStoryPart(req, res) {
+    let poolError = null;
     const {body, order} = req.body;
 
     await pool.query(
@@ -36,26 +40,32 @@ async function createStoryPart(req, res) {
             poolError = error;
         }
     )
-    res.end(parsePoolMessage(poolError))
+   let message = poolError ? poolError.toString() : 'success';
+    res.end(message);
 }
 
 async function editStoryPart(req, res) {
-    const {body, order, id, archived} = req.body;
+    let poolError = null;
+    let {body, order, id} = req.body;
+    body = body.replace(/'/g, "''");
     const query = `update story
         set body = '${body}',
-            order = '${order}',
-            archived = '${archived}'
-        where id = '${id}';
+            "order" = '${order}'
+        where id = ${id}; 
         `
+    console.log(query)
     await pool.query(query, [], error => {
-        if (error) handleError(error, res);
-        poolError = error;
+        // if (error) handleError(error, res);
+        // poolError = error;
+        console.error(error)
     })
 
-    res.end(parsePoolMessage(poolError))
+    let message = poolError ? poolError.toString() : 'success';
+    res.end(message);
 }
 
 async function handleDeleteStory(req, res) {
+    let poolError = null;
     const {id} = req.params;
     const query = `update story
                 set archived = true
@@ -65,7 +75,8 @@ async function handleDeleteStory(req, res) {
         if (error) handleError(error, res);
         poolError = error;
     })
-    res.end(parsePoolMessage(poolError))
+   let message = poolError ? poolError.toString() : 'success';
+    res.end(message);
 }
 
 module.exports = {

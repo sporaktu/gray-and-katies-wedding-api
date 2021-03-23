@@ -19,6 +19,7 @@ async function getRegistryItem(req, res) {
 
 async function handleRegistryItemPost(req, res) {
     const {id} = req.body;
+    console.log({...req.body})
     if (id) return await editRegistryItem(req, res);
     else return await createRegistryItem(req, res);
 }
@@ -27,16 +28,14 @@ async function createRegistryItem(req, res) {
     const {name, url, store, picture_url, price} = req.body;
 
     await pool.query(
-        `insert into registry (
-                      name,
-                      url,
-                      store,
-                      picture_url,
-                      price,
-                      date_created,
-                      date_modified
-                      )
-                values ($1, $2, $3, $4, $5, current_timestamp, current_timestamp)`,
+        `insert into registry (name,
+                               url,
+                               store,
+                               picture_url,
+                               price,
+                               date_created,
+                               date_modified)
+         values ($1, $2, $3, $4, $5, current_timestamp, current_timestamp)`,
         [
             name,
             url,
@@ -50,27 +49,30 @@ async function createRegistryItem(req, res) {
         }
     )
     let message = poolError ? poolError.toString() : 'success';
-    console.log(message);
+    console.log('edit message', message);
     res.end(message);
 }
 
 async function editRegistryItem(req, res) {
-    const {name, url, store, picture_url, price, purchased, archived, id} = req.body;
+    const {name, url, store, picture_url, price, id} = req.body;
+    console.log({...req.body})
     const query = `update registry
         set name = '${name}',
             url = '${url}',
             store = '${store}',
             picture_url = '${picture_url}',
             price = '${price}',
-            purchased = '${purchased}',
-            archived = '${archived}',
             date_modified = current_timestamp
-        where id = '${id};'
+        where id = '${id}';
     `
-    await pool.query(query, [], error => {
-        if (error) handleError(error, res);
-        poolError = error;
-    })
+    console.log(query)
+    await pool.query(query, [],
+        error => {
+        // This is not how you handle the error. @TODO fix this
+            // if (error) handleError(error, res);
+            // poolError = error;
+            console.error(error)
+        })
 
     let message = poolError ? poolError.toString() : 'success';
     res.end(message);
