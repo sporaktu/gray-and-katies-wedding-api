@@ -13,6 +13,7 @@ const guestsRouter = require('./routes/guests');
 const weddingPartyRouter = require('./routes/wedding-party');
 const registryRouter = require('./routes/registry');
 const storyRouter = require('./routes/story');
+const galleryRouter = require('./routes/gallery');
 
 const app = express();
 
@@ -41,6 +42,7 @@ app.use('/users', usersRouter);
 app.use('/guests', guestsRouter);
 app.use('/registry', registryRouter);
 app.use('/story', storyRouter);
+app.use('/gallery', galleryRouter);
 app.use('/wedding-party', weddingPartyRouter);
 
 

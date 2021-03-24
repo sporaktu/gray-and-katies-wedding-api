@@ -1,4 +1,4 @@
-const handleError = (err, res) => {
+function handleError (err, res){
     res
         .status(500)
         .contentType("text/plain")

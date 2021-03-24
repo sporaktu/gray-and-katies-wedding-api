@@ -6,7 +6,7 @@ async function getAllStoryParts(req, res) {
     let poolError = null;
     await pool.query('select * from story where archived = false ORDER BY "order"', (error, results) => {
         if (error) handleError(error, res);
-        res.status(200).json(results.rows);
+        else res.status(200).json(results.rows);
     })
 }
 
@@ -16,8 +16,7 @@ async function getStoryPart(req, res) {
     const {id} = req.params;
     await pool.query(`select * from story where id = '${id}' and archived = false`, (error, results) => {
         if (error) handleError(error, res);
-        console.log(results.rows)
-        res.status(200).json(results.rows);
+        else res.status(200).json(results.rows);
     })
 }
 

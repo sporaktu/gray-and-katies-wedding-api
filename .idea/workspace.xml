@@ -20,10 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding story edit stuff">
+      <change afterPath="$PROJECT_DIR$/SQL/createPhotosTable.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/gallery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/gallery.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/registry.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/helpers/handleError.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/helpers/handleError.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/story.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/story.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/wedding-party.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/wedding-party.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +94,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -104,6 +107,17 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="createGuestsTable.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/SQL/createGuestsTable.sql" />
       <script-mode>FILE</script-mode>
@@ -187,7 +201,9 @@
       <workItem from="1612405040584" duration="4433000" />
       <workItem from="1615948459130" duration="5471000" />
       <workItem from="1616036193642" duration="1755000" />
-      <workItem from="1616462846056" duration="5831000" />
+      <workItem from="1616462846056" duration="6613000" />
+      <workItem from="1616527658336" duration="48000" />
+      <workItem from="1616544195057" duration="5656000" />
     </task>
     <task id="LOCAL-00001" summary="Adding image link capabilities">
       <created>1609385221057</created>
@@ -203,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615955697192</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding story edit stuff">
+      <created>1616471846450</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616471846450</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
