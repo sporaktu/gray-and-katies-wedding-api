@@ -4,11 +4,48 @@ const handleError = require('./helpers/handleError')
 
 async function getAllPhotos(req, res) {
     await pool.query(`SELECT *
-                      from photos ORDER BY "order"`,
+                      from photos
+                      ORDER BY "order"`,
         (error, results) => {
             if (error) console.error(error);
             else res.status(200).json(results.rows);
         })
+}
+
+async function getPhoto(req, res) {
+    const {id} = req.params;
+    await pool.query(`SELECT * from photos where id = '${id}'`,
+        (error, results) => {
+            if (error) {
+                console.error(error);
+                res
+                    .status(500)
+                    .contentType("text/plain")
+                    .end("Oops! Something went wrong!");
+            }
+            else {
+                res.status(200).json(results.rows);
+            }
+        })
+}
+
+async function handlePhotoPost(req, res) {
+    const {id} = req.body;
+    if (id) return await editPhoto(req, res);
+    else return await addPhoto(req, res);
+}
+
+async function editPhoto(req, res) {
+    let {url, order, id} = req.body;
+    let poolError = null;
+    const query = `UPDATE photos set url = '${url}', "order" = '${order}' where id = ${id}`;
+    await pool.query(query,[], error => {
+        console.error(error)
+    })
+    let message = poolError ? poolError.toString() : 'success';
+    poolError ?
+        res.status(500).contentType("text/plain").end("Oops! Something went wrong!") :
+        res.end(message);
 }
 
 async function addPhoto(req, res) {
@@ -42,6 +79,7 @@ async function deletePhoto(req, res) {
 
 module.exports = {
     getAllPhotos,
-    addPhoto,
-    deletePhoto
+    getPhoto,
+    deletePhoto,
+    handlePhotoPost
 }

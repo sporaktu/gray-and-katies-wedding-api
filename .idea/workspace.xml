@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding story edit stuff">
+    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Sorting photos by order">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/gallery.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +189,8 @@
       <workItem from="1616462846056" duration="6613000" />
       <workItem from="1616527658336" duration="48000" />
       <workItem from="1616544195057" duration="5656000" />
-      <workItem from="1616599172855" duration="29000" />
+      <workItem from="1616599172855" duration="417000" />
+      <workItem from="1616599658970" duration="819000" />
     </task>
     <task id="LOCAL-00001" summary="Adding image link capabilities">
       <created>1609385221057</created>
@@ -210,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616471846450</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Sorting photos by order">
+      <created>1616599217728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616599217728</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +245,7 @@
     <MESSAGE value="Adding image link capabilities" />
     <MESSAGE value="Adding scraping stuff" />
     <MESSAGE value="Adding story edit stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding story edit stuff" />
+    <MESSAGE value="Sorting photos by order" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorting photos by order" />
   </component>
 </project>

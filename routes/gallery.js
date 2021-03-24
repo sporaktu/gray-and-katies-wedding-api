@@ -1,12 +1,14 @@
 const router = require('express').Router();
 const {
     getAllPhotos,
-    addPhoto,
+    getPhoto,
+    handlePhotoPost,
     deletePhoto
 } = require('../modules/gallery');
 
 router.get('/', getAllPhotos);
-router.post('/', addPhoto);
+router.get('/:id', getPhoto);
+router.post('/', handlePhotoPost);
 router.delete('/:id', deletePhoto);
 
 module.exports = router;
