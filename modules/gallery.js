@@ -4,7 +4,7 @@ const handleError = require('./helpers/handleError')
 
 async function getAllPhotos(req, res) {
     await pool.query(`SELECT *
-                      from photos`,
+                      from photos ORDER BY "order"`,
         (error, results) => {
             if (error) console.error(error);
             else res.status(200).json(results.rows);
