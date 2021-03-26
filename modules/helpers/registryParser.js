@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const {pool} = require('../../config');
+const {target, amazon, bedbathandbeyond} = require('./selectors');
 
 let urls = [];
 
@@ -22,3 +23,26 @@ await pool.query('select (url, id) from registry where archived = false',
         }
     })
 const browser = await puppeteer.launch();
+
+async function determineStore(url) {
+
+}
+
+async function parsePage(item) {
+    const {id, url} = item;
+    const results = {id, url};
+    const page = await browser.newPage();
+    await page.goto(url);
+
+    switch
+}
+
+async function parseTarget(page) {
+
+}
+async function parseTarget(page) {
+
+}
+async function parseTarget(page) {
+
+}
