@@ -66,7 +66,7 @@ async function editRegistryItem(req, res) {
         where id = '${id}';
     `
     console.log(query)
-    await pool.query(query, [],
+    await pool.query(query,
         error => {
         // This is not how you handle the error. @TODO fix this
             // if (error) handleError(error, res);

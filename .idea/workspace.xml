@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding ability to edit photos">
-      <change afterPath="$PROJECT_DIR$/modules/helpers/selectors.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/helpers/registryParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/helpers/registryParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/registry.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
