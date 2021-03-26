@@ -3,11 +3,13 @@ const {
     getAllRegistry,
     getRegistryItem,
     handleRegistryItemPost,
-    handleDeleteRegistryItem
+    handleDeleteRegistryItem,
+    handleParseTrigger
 } = require('../modules/registry');
 
 router.get('/', getAllRegistry);
 router.get('/:id', getRegistryItem);
+router.post('/refresh', handleParseTrigger);
 router.post('/', handleRegistryItemPost);
 router.delete('/:id', handleDeleteRegistryItem);
 

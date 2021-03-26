@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding ability to edit photos">
+    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Finalizing parser function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/helpers/registryParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/helpers/registryParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/registry.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/registry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/registry.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/registry.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616600537047</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finalizing parser function">
+      <created>1616721916894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616721916894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,6 +275,7 @@
     <MESSAGE value="Adding story edit stuff" />
     <MESSAGE value="Sorting photos by order" />
     <MESSAGE value="Adding ability to edit photos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding ability to edit photos" />
+    <MESSAGE value="Finalizing parser function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizing parser function" />
   </component>
 </project>

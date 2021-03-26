@@ -1,6 +1,7 @@
 let poolError = null;
 const {pool} = require('../config');
 const handleError = require('./helpers/handleError')
+const parse = require('./helpers/registryParser');
 
 async function getAllRegistry(req, res) {
     await pool.query('select * from registry where archived = false', (error, results) => {
@@ -93,9 +94,15 @@ async function handleDeleteRegistryItem(req, res) {
     res.end(message);
 }
 
+async function handleParseTrigger(req, res) {
+    await parse();
+    res.end('success');
+}
+
 module.exports = {
     getAllRegistry,
     getRegistryItem,
     handleRegistryItemPost,
-    handleDeleteRegistryItem
+    handleDeleteRegistryItem,
+    handleParseTrigger
 }
