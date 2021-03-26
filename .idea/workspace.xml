@@ -19,10 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Sorting photos by order">
+    <list default="true" id="8208a2ad-177e-4fde-8b1d-9965a0266b09" name="Default Changelist" comment="Adding ability to edit photos">
+      <change afterPath="$PROJECT_DIR$/modules/helpers/registryParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +104,17 @@
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="createGuestsTable.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/SQL/createGuestsTable.sql" />
       <script-mode>FILE</script-mode>
@@ -190,7 +202,9 @@
       <workItem from="1616527658336" duration="48000" />
       <workItem from="1616544195057" duration="5656000" />
       <workItem from="1616599172855" duration="417000" />
-      <workItem from="1616599658970" duration="819000" />
+      <workItem from="1616599658970" duration="1480000" />
+      <workItem from="1616607464856" duration="605000" />
+      <workItem from="1616716129513" duration="3244000" />
     </task>
     <task id="LOCAL-00001" summary="Adding image link capabilities">
       <created>1609385221057</created>
@@ -220,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616599217728</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding ability to edit photos">
+      <created>1616600537047</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616600537047</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +267,7 @@
     <MESSAGE value="Adding scraping stuff" />
     <MESSAGE value="Adding story edit stuff" />
     <MESSAGE value="Sorting photos by order" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sorting photos by order" />
+    <MESSAGE value="Adding ability to edit photos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding ability to edit photos" />
   </component>
 </project>
